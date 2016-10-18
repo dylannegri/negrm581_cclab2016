@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welp: Worst Yelp</title>
+	<meta charset="utf-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Varela+Round" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>~ Welp ~</h1>
+<h3>Worst Yelp Reviews Greatest Hits Blog:</h3>
+
+<div id="container">
+	<div id="nav_prev">
+		<a href="#" id="prev_btn">&laquo;</a>
+	</div>
+		<div id="nav_next">
+			<a href="#" id="next_btn">&raquo;</a>
+		</div>
+	<div id="results"></div>
+</div>
+
+	<script id="template" type="text/template">
+		{{#restaurants}}
+		<div class="tmpl">
+			<img src="{{image}}" alt="Photo of {{name}}">
+			<h2>{{num}}<a href="{{reviewPage}}">{{name}}</a></h2>
+			<h4>{{style}}</h4>
+			<h5>{{address}}</h5>
+			<!-- <img src="{{rating}}"> -->
+			<p>{{review}}</p>
+		</div>
+		<!-- This should be mustache results... -->
+		{{/restaurants}}
+	</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.js" type="text/javascript"></script>
+	<script src="script.js" type="text/javascript"></script>
+</body>
+</html> 
+
+
+
+<!-- <div id="searchArea"></div>
+	<label for="search">WELP!</label>
+	<p>Enter style of worst restaurant you wish to find.</p>
+	<input type="search" name="search" id="search" placeholder="New American, Pizza, Italian, Japanese etc.">
+<div class="searchresults"></div> -->	
