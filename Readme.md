@@ -6,3 +6,4 @@ processing with arduino homework 03: https://www.youtube.com/watch?v=_CMPPjt0dc8
 
 soldering homework 03b: https://www.youtube.com/watch?v=fbi_UX6GFc0
 
+openframeworks first project: https://www.youtube.com/watch?v=L7r4pUGl8tQ
