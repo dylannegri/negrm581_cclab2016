@@ -13,6 +13,7 @@ public:
 	ofParameter<float> posX;
 	ofParameter<float> posY;
 	ofParameter<float> radius;
+	ofParameter<int> resolution;
 
 	float rotation = 0.0;
 	int blue;

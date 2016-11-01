@@ -4,6 +4,8 @@ void planetClass::setup() {
 	planetGroup.add(rotateSpeed.set("speed", 1.0, 0.0, 9.0));
 	planetGroup.add(posX.set("X", 0, 0, 600));
 	planetGroup.add(posY.set("Y", 0, 0, 600));
+	planetGroup.add(resolution.set("resolution", 1, 0, 10));
+
 	radius = 50;
 	red = 255;
 	green = 0;
@@ -34,8 +36,8 @@ void planetClass::update() {
 
 void planetClass::draw() {
 
-	ofSetCircleResolution(ofRandom(40));
+	ofSetCircleResolution(resolution);
 	ofSetColor(red, green, blue);
 	ofRotate(rotation * rotateSpeed);
-	ofCircle(posX, posY, ofRandom(radius));
+	ofCircle(posX, posY, radius);
 }
