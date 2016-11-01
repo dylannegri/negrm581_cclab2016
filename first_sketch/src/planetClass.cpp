@@ -4,7 +4,7 @@ void planetClass::setup() {
 	planetGroup.add(rotateSpeed.set("speed", 1.0, 0.0, 9.0));
 	planetGroup.add(posX.set("X", 0, 0, 600));
 	planetGroup.add(posY.set("Y", 0, 0, 600));
-	planetGroup.add(resolution.set("resolution", 1, 0, 10));
+	planetGroup.add(resolution.set("resolution", 3, 3, 15));
 
 	radius = 50;
 	red = 255;

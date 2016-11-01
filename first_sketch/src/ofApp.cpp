@@ -31,11 +31,11 @@ void ofApp::draw(){
 	ofTranslate(ofGetWidth() / 2, ofGetHeight() / 2);
 	planet01.draw();
 
-	ofTranslate(planet01.posX * -1.2, planet01.posY * -1.2);
+	ofTranslate(planet01.posX * 1.2, planet01.posY * 1.2);
 	planet02.draw();
 
-	ofTranslate(planet02.posX * 0.7, planet02.posY * 0.7);
-	planet02.draw();
+	ofTranslate(planet02.posX * 0.8 , planet02.posY * 0.8);
+	planet03.draw();
 }
 
 //--------------------------------------------------------------
